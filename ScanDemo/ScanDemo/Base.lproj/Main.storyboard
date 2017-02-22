@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e5O-kQ-pHb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxO-Kb-rrB">
+                                <rect key="frame" x="132" y="97" width="111" height="56"/>
+                                <color key="backgroundColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="O23-gY-VXE"/>
+                                    <constraint firstAttribute="width" constant="111" id="lMR-lq-SXa"/>
+                                </constraints>
+                                <state key="normal" title="扫描二维码">
+                                    <color key="titleColor" red="0.92156862750000001" green="0.38431372549999998" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="scanClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZTI-KJ-mN2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciq-h5-Yqk">
+                                <rect key="frame" x="114" y="185" width="147" height="56"/>
+                                <color key="backgroundColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="SnI-xM-eqV"/>
+                                    <constraint firstAttribute="width" constant="147" id="myP-xI-YFL"/>
+                                </constraints>
+                                <state key="normal" title="识别相册的二维码">
+                                    <color key="titleColor" red="0.92156862750000001" green="0.38431372549999998" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="readQRCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="76v-3e-pyr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2j-Um-nX1">
+                                <rect key="frame" x="114" y="329" width="147" height="56"/>
+                                <color key="backgroundColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="0Pz-ex-dZk"/>
+                                    <constraint firstAttribute="height" constant="56" id="eOR-6S-fF3"/>
+                                </constraints>
+                                <state key="normal" title="生成二维码">
+                                    <color key="titleColor" red="0.92156862750000001" green="0.38431372549999998" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="randerQRCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0wy-PO-WnG"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://www.baidu.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aSF-gB-DH1">
+                                <rect key="frame" x="32" y="270" width="311" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="JXY-SO-aue"/>
+                                    <constraint firstAttribute="height" constant="30" id="lPF-8y-WIT"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m2j-Um-nX1" firstAttribute="top" secondItem="aSF-gB-DH1" secondAttribute="bottom" constant="29" id="3jV-8n-nhH"/>
+                            <constraint firstItem="m2j-Um-nX1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5mu-fd-948"/>
+                            <constraint firstItem="aSF-gB-DH1" firstAttribute="top" secondItem="ciq-h5-Yqk" secondAttribute="bottom" constant="29" id="6ba-lM-eGH"/>
+                            <constraint firstItem="ciq-h5-Yqk" firstAttribute="top" secondItem="LxO-Kb-rrB" secondAttribute="bottom" constant="32" id="bm8-Hb-WMI"/>
+                            <constraint firstItem="aSF-gB-DH1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h7n-TK-tNQ"/>
+                            <constraint firstItem="LxO-Kb-rrB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="npf-V4-a0S"/>
+                            <constraint firstItem="LxO-Kb-rrB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="q5b-Ff-Pgw"/>
+                            <constraint firstItem="ciq-h5-Yqk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zgW-8o-e1Y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lss-ck-Csb"/>
+                    <connections>
+                        <outlet property="tf" destination="aSF-gB-DH1" id="5yB-wv-9hn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.5999999999999" y="314.39280359820094"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aO3-fw-FgC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e5O-kQ-pHb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZxC-Dv-5s4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Cc9-b5-GtI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTv-5D-N3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="315"/>
+        </scene>
+    </scenes>
+</document>
